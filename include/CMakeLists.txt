@@ -1,9 +1,6 @@
-project(motion_header)
+project(moto_header)
 
-add_library(${PROJECT_NAME} INTERFACE
-  "motion/core.h"
-  "motion/precision.h"
-)
+add_library(${PROJECT_NAME} INTERFACE)
 
 target_include_directories(${PROJECT_NAME}
 INTERFACE

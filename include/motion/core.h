@@ -1,7 +1,7 @@
+#include <math.h>
+
 #ifndef __MOTION_CORE_H__
 #define __MOTION_CORE_H__
-
-#include <math.h>
 
 #include "precision.h"
 
@@ -47,7 +47,7 @@ namespace motion
       real length = magnitude();
       if(length > 0)
       {
-        (*this) *= ((real)length) / length;
+        (*this) *= ((real)1) / length;
       }
     }
 
@@ -147,6 +147,12 @@ namespace motion
       return Vector3(y*vector.z - z*vector.y,
                      z*vector.x - x*vector.z,
                      x*vector.y - y*vector.x);
+    }
+
+    /** Zero all the components of the vector */
+    void clear()
+    {
+      x = y = z = 0;
     }
 
   public: // fields
