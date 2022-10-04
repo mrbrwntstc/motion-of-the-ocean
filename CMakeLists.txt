@@ -9,7 +9,7 @@ set(SOURCE_FILES
 
 add_library(moto ${SOURCE_FILES})
 
-target_link_libraries(motion
+target_link_libraries(moto
 PUBLIC
   moto_header
 )
