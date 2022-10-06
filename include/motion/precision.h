@@ -21,6 +21,9 @@ namespace motion
   /** defines the precision of the absolute value operator */
   #define real_abs fabs
 
+  /** Defines the highest value for the real number */
+  #define REAL_MAX FLT_MAX
+
 }
 
 #endif // __MOTION_PRECISION_H__
